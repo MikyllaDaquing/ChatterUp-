@@ -8,8 +8,8 @@ messages = []   # list for storing messages.
 def chat_message(own_id):
 
     # a loop that iterates over a collection of messages and renders each chat message in a user interface using "ui.chat_message()".
-    for user_id, avatar, text in messages:
-        ui.chat_message(avatar = avatar, text = text, sent = user_id == own_id)
+    for user_id, avatar, text, timestamp in messages:
+        ui.chat_message(avatar = avatar, text = f"{text} ({timestamp})", sent = user_id == own_id)
 
 # Main chat page setup. This creates the user session, the chat interface, and the input field for sending messages.
 @ui.page('/')
@@ -17,8 +17,9 @@ def index():
 
     # Send function. Handles sending messages.
     def send():
-        messages.append((user, avatar, text.value))
-        chat_message.refresh()
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')   # Format: Year-Month-Day Hour:Minutes:Seconds
+        messages.append((user, avatar, text.value, timestamp))
+        chat_message.refresh()  
         text.value = ''     # Clears the input field after sending.
     
     user = str(uuid4())     # Unique user ID for each session.
