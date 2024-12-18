@@ -1,0 +1,18 @@
+Group Name: Svelte
+
+Members:
+    Sumbad, Vinico
+    Dela Cruz, Jerimie
+    Daquing, Princess Mikylla
+
+Section: CS3B
+
+About Project:
+
+    We created a messaging app, named "ChatUp!". It enables communication between 2 or more users.
+
+    We used a python-based framework "NiceGUI" which is used for creating web applications.
+    
+    The messaging app we created can only send and receive text messages and not yet able to make calls or send any images/files.
+    
+    The messaging app can automatically generate a different avatar for each user.
