@@ -5,9 +5,16 @@ Members:
     Dela Cruz, Jerimie
     Daquing, Princess Mikylla
 
+Group Name: NodeJS
+
+Members: 
+    Cabang, Jonadel
+    Daproza, Abegail
+    Pais, Francene Gian
+
 Section: CS3B
 
-About Project:
+About Project: 
 
     We created a messaging app, named "ChatUp!". It enables communication between 2 or more users.
 
