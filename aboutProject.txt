@@ -13,6 +13,8 @@ About Project:
 
     We used a python-based framework "NiceGUI" which is used for creating web applications.
     
-    The messaging app we created can only send and receive text messages and not yet able to make calls or send any images/files.
+    The messaging app we created can send and receive text messages from multiple users.
     
     The messaging app can automatically generate a different avatar for each user.
+
+    Each messages sent will automaticaaly generate the current date and time.
